@@ -10,6 +10,21 @@ import project3 from "./img/project-3.png"
 function App() {
   const [loading, setLoading] = useState(true);
 
+  function handleClick(){
+    let btn = document.getElementById("mobile-toggle");
+    let btn2 = document.getElementById("mobile-toggle-2");
+    if(btn.className==="mobile-nav-active"){
+      btn.setAttribute( "class", "" ); 
+      
+    }
+    else{
+      btn.setAttribute( "class", "mobile-nav-active" ); 
+      btn.setAttribute("style",'{{ width: "0%" }}')
+      btn2.setAttribute("style",'{{ width: "100%" }}')
+    }
+    
+  }
+
   useEffect(() => {
     // simulate loading data from an API
     setTimeout(() => {
@@ -17,13 +32,16 @@ function App() {
     }, 500);
   }, []);
 
+
+  
+
   return (
     <div className="App">
 
 
       <div className='intro' style={{ display: "flex" }}>
-        <div style={{ width: "20%" }}>
-          <i className="bi bi-list mobile-nav-toggle d-xl-none"></i>
+        <div id='mobile-toggle' style={{ width: "20%" }} className="">
+          <i className="bi bi-list mobile-nav-toggle d-xl-none" onClick={handleClick}></i>
           <header id="header" style={{ backgroundColor: "rgba(0,0,0,0.7)" }}>
             <div className="d-flex flex-column">
 
@@ -59,7 +77,7 @@ function App() {
             </div>
           </div>
         ) : (
-          <div style={{ width: "80%" }}>
+          <div id='mobile-toggle-2' style={{ width: "80%" }}>
             <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
               <div className="hero-container" >
                 <h1>Shivam Verma</h1>
