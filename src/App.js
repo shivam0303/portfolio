@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 import project1 from "./img/project-1.png"
 import project2 from "./img/project-2.png"
 import project3 from "./img/project-3.png"
+import {isMobile} from 'react-device-detect';
 
 
 function App() {
@@ -19,8 +20,8 @@ function App() {
     }
     else{
       btn.setAttribute( "class", "mobile-nav-active" ); 
-      btn.setAttribute("style",'{{ width: "0%" }}')
-      btn2.setAttribute("style",'{{ width: "100%" }}')
+      // btn.setAttribute("style",'{{ width: "0%" }}')
+      // btn2.setAttribute("style",'{{ width: "100%" }}')
     }
     
   }
@@ -37,10 +38,10 @@ function App() {
 
   return (
     <div className="App">
-
+    
 
       <div className='intro' style={{ display: "flex" }}>
-        <div id='mobile-toggle' style={{ width: "20%" }} className="">
+        <div id='mobile-toggle' style={{ width: isMobile ? "0%" : "20%" }} className="">
           <i className="bi bi-list mobile-nav-toggle d-xl-none" onClick={handleClick}></i>
           <header id="header" style={{ backgroundColor: "rgba(0,0,0,0.7)" }}>
             <div className="d-flex flex-column">
@@ -77,7 +78,7 @@ function App() {
             </div>
           </div>
         ) : (
-          <div id='mobile-toggle-2' style={{ width: "80%" }}>
+          <div style={{ width: isMobile ? "100%" : "80%"}}>
             <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
               <div className="hero-container" >
                 <h1>Shivam Verma</h1>
