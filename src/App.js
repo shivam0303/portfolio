@@ -13,7 +13,6 @@ function App() {
 
   function handleClick(){
     let btn = document.getElementById("mobile-toggle");
-    let btn2 = document.getElementById("mobile-toggle-2");
     if(btn.className==="mobile-nav-active"){
       btn.setAttribute( "class", "" ); 
       
