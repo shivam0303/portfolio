@@ -151,25 +151,25 @@ function App() {
                     </button>
                   </div>
                 </div>
-                <div className="container" style={{ display: "flex" }}>
+                <div className="container" style={{ display: "flex", padding:"0px" }}>
 
 
-                  <div className="card text-white bg-dark mb-3" style={{ width: "30%", marginRight: "5%" }}>
+                  <div className="card text-white bg-dark mb-3" style={{ width: "33%", marginRight: "5px" }}>
                     <div className="card-body">
                       <h5 className="card-title">Tailor's portfolio</h5>
                       <hr />
-                      <p className="card-text" style={{ fontSize: "18px" }}>
+                      <p className="card-text" style={{ fontSize: "16px" }}>
                         Portfolio feature for tailors using React, Redux, Bootstrap, and other utility functions
                       </p>
                     </div>
                   </div>
 
-                  <div className="card text-white bg-dark mb-3" style={{ width: "30%", marginRight: "5%" }}>
+                  <div className="card text-white bg-dark mb-3" style={{ width: "33%", marginRight: "5px" }}>
                     <div className="card-body">
-                      <h5 className="card-title">BOMB.MONEY DASHBOARD</h5>
+                      <h5 className="card-title">Bomb.money dashboard</h5>
                       <hr />
-                      <p className="card-text" style={{ fontSize: "18px" }}>
-                        Web3 platform created using React, material UI, and other utility functions
+                      <p className="card-text" style={{ fontSize: "16px" }}>
+                        Web3 platform created using React, material UI, and integrating metamask wallet
                       </p>
 
                     </div>
@@ -177,12 +177,12 @@ function App() {
 
 
 
-                  <div className="card text-white bg-dark mb-3" style={{ width: "30%" }}>
+                  <div className="card text-white bg-dark mb-3" style={{ width: "33%" }}>
                     <div className="card-body">
-                      <h5 className="card-title">KEEPER APP</h5>
+                      <h5 className="card-title">Lens.ai user's account</h5>
                       <hr />
-                      <p className="card-text" style={{ fontSize: "18px" }}>
-                        Web app using React and Bootstrap implementing CRUD operations
+                      <p className="card-text" style={{ fontSize: "16px" }}>
+                        Web app using React, fetching data from apis for a user and providing sorting options
                       </p>
                     </div>
                   </div>
@@ -209,25 +209,25 @@ function App() {
                 </div>
 
                 <div className="row">
-                  <div className="col-lg-12 d-flex">
+                  <div className="col-lg-12 d-flex" style={{fontSize: "18px" }}>
 
 
                     <div className="address" style={{ width: "33%" }}>
                       <i className="bi bi-geo-alt"></i>
                       <h4>Location:</h4>
-                      <p>B-1 hostel, IIT JODHPUR</p>
+                      <div>B-1 hostel, IIT JODHPUR</div>
                     </div>
 
                     <div className="email" style={{ width: "33%" }}>
                       <i className="bi bi-envelope"></i>
                       <h4>Email:</h4>
-                      <p>verma.32@iitj.ac.in</p>
+                      <div>verma.32@ iitj.ac.in</div>
                     </div>
 
                     <div className="phone" style={{ width: "33%" }}>
                       <i className="bi bi-phone"></i>
                       <h4>Call:</h4>
-                      <p>+91 9267927226</p>
+                      <div>+91 9267927226</div>
                     </div>
 
                   </div>
